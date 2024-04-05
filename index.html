@@ -38,17 +38,23 @@
               <input
                 class="search__bar"
                 type="text"
-                placeholder="Enter Keywords"
-              /><button class="search__btn show__cursor">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+                id="search__movies__bar"
+                placeholder="Enter Pokemon Name"
+              /><button
+                type="button"
+                class="search__btn show__cursor"
+                onclick="searchMovies()"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i></button
+              ><br />
+              <img src="" alt="" id="movie__poster__id" />
             </div>
           </div>
         </div>
       </header>
       <div class="row">
         <div class="movie__wrapper">
-          <figure class="movie__poster"></figure>
+          <img class="movie__poster" id="poster"/>
           <h1 class="movie__title">asdf</h1>
           <p class="movie__runtime">fdsa</p>
         </div>

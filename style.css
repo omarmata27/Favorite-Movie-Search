@@ -132,3 +132,13 @@ nav {
 .fa-magnifying-glass {
   color: #fff;
 }
+
+/* MOVIE STYLING */
+
+.movie__poster {
+  height: 100px;
+  width: 100px;
+  border-color: #242424;
+  border-width: 1px;
+  padding: 10px;
+}
