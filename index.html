@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Movie Searcher</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <script
@@ -39,7 +39,7 @@
                 class="search__bar"
                 type="text"
                 id="search__movies__bar"
-                placeholder="Enter Pokemon Name"
+                placeholder="Enter Movie"
               /><button
                 type="button"
                 class="search__btn show__cursor"
@@ -47,16 +47,30 @@
               >
                 <i class="fa-solid fa-magnifying-glass"></i></button
               ><br />
-              <img src="" alt="" id="movie__poster__id" />
             </div>
           </div>
         </div>
       </header>
-      <div class="row">
+      <div class="row" onclick="searchMovies()" id="movieListEl">
         <div class="movie__wrapper">
-          <img class="movie__poster" id="poster"/>
-          <h1 class="movie__title">asdf</h1>
-          <p class="movie__runtime">fdsa</p>
+          <div class="movie__poster">
+            <img src="" alt="" id="poster" />
+          </div>
+          <div class="movie__info">
+            <h1 class="movie__title">Guardians of the Galaxy Vol. 2</h1>
+            <p class="movie__year"><b>Released:</b> 2017</p>
+            <p class="movie__actors">
+              <b>Actors:</b> Chris Pratt, Zoe Saldana, Dave Bautista
+            </p>
+            <p class="movie__metascore"><b>Metascore:</b> 67</p>
+            <p class="movie__rated"><b>Rated:</b> PG-13</p>
+            <p class="movie__plot">
+              <b>Plot:</b> "The Guardians struggle to keep together as a team
+              while dealing with their personal family issues, notably
+              Star-Lord's encounter with his father, the ambitious celestial
+              being Ego."
+            </p>
+          </div>
         </div>
       </div>
     </section>
