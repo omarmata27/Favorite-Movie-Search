@@ -15,14 +15,15 @@ async function searchMovies() {
     console.warn(err.message);
   }
 
-  movieListEl.innerHTML = movieData.map((movie) => {
+  movieListEl.innerHTML = movieData
+    .map((movie) => {
       return `
       <div class="movie__wrapper">
       <div class="movie__poster">
         <img src="" alt="" id="poster" />
       </div>
       <div class="movie__info">
-        <h1 class="movie__title">Guardians of the Galaxy Vol. 2</h1>
+        <h1 class="movie__title">${movie.title}</h1>
         <p class="movie__year"><b>Released:</b> 2017</p>
         <p class="movie__actors">
           <b>Actors:</b> Chris Pratt, Zoe Saldana, Dave Bautista
@@ -42,4 +43,3 @@ async function searchMovies() {
     .join("");
 }
 searchMovies();
-
