@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Searcher</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8aaa22056c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section class="row">
+    <section id="nav">
       <nav>
         <h2 class="site__name azul">Movie Searcher</h2>
         <ul class="nav__list">
-          <li><a class="nav__link" href="#">Home</a></li>
-          <li><a class="nav__link" href="#">Find Your Movie</a></li>
-          <button class="nav__btn show__cursor">Contact</button>
+          <li><a class="nav__link" href="#" aria-label="Home">Home</a></li>
+          <li>
+            <a class="nav__link" href="#" aria-label="Find Your Movie"
+              >Find Your Movie</a
+            >
+          </li>
+          <button class="nav__btn show__cursor" aria-label="Contact">
+            Contact
+          </button>
         </ul>
       </nav>
     </section>
@@ -40,10 +46,12 @@
                 type="text"
                 id="search__movies__bar"
                 placeholder="Enter Movie"
+                aria-label="Search Movies"
               /><button
                 type="button"
                 class="search__btn show__cursor"
                 onclick="searchMovies()"
+                aria-label="Search"
               >
                 <i class="fa-solid fa-magnifying-glass"></i></button
               ><br />
@@ -57,19 +65,8 @@
             <img src="" alt="" id="poster" />
           </div>
           <div class="movie__info">
-            <h1 class="movie__title">Guardians of the Galaxy Vol. 2</h1>
-            <p class="movie__year"><b>Released:</b> 2017</p>
-            <p class="movie__actors">
-              <b>Actors:</b> Chris Pratt, Zoe Saldana, Dave Bautista
-            </p>
-            <p class="movie__metascore"><b>Metascore:</b> 67</p>
-            <p class="movie__rated"><b>Rated:</b> PG-13</p>
-            <p class="movie__plot">
-              <b>Plot:</b> The Guardians struggle to keep together as a team
-              while dealing with their personal family issues, notably
-              Star-Lord's encounter with his father, the ambitious celestial
-              being Ego.
-            </p>
+            <h1 class="movie__title"></h1>
+            <p class="movie__year"><b></b></p>
           </div>
         </div>
       </div>
