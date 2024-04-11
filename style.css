@@ -83,21 +83,6 @@ nav {
   font-size: 700;
 }
 
-.nav__link::before {
-  content: ''; 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0; 
-  height: 2px; 
-  background-color: black;
-  transition: width 0.3s ease; 
-}
-
-.nav__link:hover::before {
-  width: 100%; 
-}
-
 .nav__btn {
   margin-left: auto;
   border-radius: 20px;
