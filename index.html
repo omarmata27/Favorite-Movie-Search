@@ -12,18 +12,25 @@
     ></script>
   </head>
   <body>
-    <img class="background__img" src="./popcorn background 1.jpg" alt="">
+    <img class="background__img" src="./popcorn background 1.jpg" alt="" />
     <section id="nav">
       <nav>
         <h2 class="site__name azul">Movie Searcher</h2>
         <ul class="nav__list">
-          <li><a id="homeLink" class="nav__link" href="#" aria-label="Home">Home</a></li>
           <li>
-            <a class="nav__link" href="#" aria-label="Find Your Movie"
+            <a id="homeLink" class="nav__link" href="#" aria-label="Home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link no__cursor"
+              href="#"
+              aria-label="Find Your Movie"
               >Find Your Movie</a
             >
           </li>
-          <button class="nav__btn show__cursor" aria-label="Contact">
+          <button class="nav__btn no__cursor" aria-label="Contact">
             Contact
           </button>
         </ul>
@@ -60,7 +67,12 @@
           </div>
         </div>
       </header>
-      <div class="movieList__container" onclick="searchMovies()" id="movieListEl">
+      <div id="popupMessage" class="popup-message"></div>
+      <div
+        class="movieList__container"
+        onclick="searchMovies()"
+        id="movieListEl"
+      >
         <div class="movie__wrapper">
           <div class="movie__poster">
             <img src="" alt="" id="poster" />

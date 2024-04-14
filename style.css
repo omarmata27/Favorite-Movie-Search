@@ -172,9 +172,9 @@ nav {
 }
 
 .movie__poster img {
-  border-radius: 20px;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px; /* Rounded corners for the poster */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1.5);
+  border: 1px solid #000000;
 }
 
 .movie__wrapper {
@@ -190,7 +190,31 @@ nav {
   width: 100%;
 }
 
+.movie__title,
+.movie__year {
+  font-weight: bold;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #ff3406c0;
+  color: #000000;
+  text-align: center;
+  display: none;
+}
 
+.movie__title.show,
+.movie__year.show {
+  display: block;
+}
+
+.movie__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.movie__year {
+  font-size: 16px;
+}
 
 /* For screens up to 1200px */
 @media only screen and (max-width: 1200px) {
