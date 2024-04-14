@@ -12,11 +12,12 @@
     ></script>
   </head>
   <body>
+    <img class="background__img" src="./popcorn background 1.jpg" alt="">
     <section id="nav">
       <nav>
         <h2 class="site__name azul">Movie Searcher</h2>
         <ul class="nav__list">
-          <li><a class="nav__link" href="#" aria-label="Home">Home</a></li>
+          <li><a id="homeLink" class="nav__link" href="#" aria-label="Home">Home</a></li>
           <li>
             <a class="nav__link" href="#" aria-label="Find Your Movie"
               >Find Your Movie</a
@@ -59,7 +60,7 @@
           </div>
         </div>
       </header>
-      <div class="row" onclick="searchMovies()" id="movieListEl">
+      <div class="movieList__container" onclick="searchMovies()" id="movieListEl">
         <div class="movie__wrapper">
           <div class="movie__poster">
             <img src="" alt="" id="poster" />
